@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="Definitions_holiday_drinks" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Web Modeler" exporterVersion="14abb68" camunda:diagramRelationId="82f3d0f3-c0d6-4707-a8ef-19f35014a023" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.1.0">
+  <decision id="Decision_choose_drink" name="Choose a drink">
+    <decisionTable id="DecisionTable_0lt6juq" hitPolicy="COLLECT">
+      <input id="Input_1" label="Alcoholic">
+        <inputExpression id="InputExpression_1" typeRef="string">
+          <text>alcohol</text>
+        </inputExpression>
+        <inputValues id="UnaryTests_0u01zii">
+          <text>"None","Some","Lots"</text>
+        </inputValues>
+      </input>
+      <input id="InputClause_0rehkgp" label="warm">
+        <inputExpression id="LiteralExpression_0evcifa" typeRef="boolean">
+          <text>warm</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0tmzur9" label="region">
+        <inputExpression id="LiteralExpression_0jst7fn" typeRef="string">
+          <text>region</text>
+        </inputExpression>
+        <inputValues id="UnaryTests_13w7new">
+          <text>"Australasia","Europe","The Americas","Africa","Asia"</text>
+        </inputValues>
+      </input>
+      <output id="Output_1" label="Drink" name="drinkname" typeRef="string" />
+      <output id="OutputClause_1kox9r3" label="Recommended by" name="recommender" typeRef="string" />
+      <rule id="DecisionRule_12fjgmb">
+        <description>https://en.wikipedia.org/wiki/Mulled_wine</description>
+        <inputEntry id="UnaryTests_12jkg7g">
+          <text>"Some"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1xsx3se">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1ilh77q">
+          <text>"Europe"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1v9yhx8">
+          <text>"Glühwein"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0hl1at8">
+          <text>"Niall"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1ef5nqr">
+        <description>https://en.wikipedia.org/wiki/Lumumba_(drink)</description>
+        <inputEntry id="UnaryTests_1xtqwj4">
+          <text>"Some"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0ctdpkc">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1n6k1dk">
+          <text>"Europe"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1g9c0qa">
+          <text>"Tote Tante (dead aunt)"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0uiemp9">
+          <text>"Nele"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0bj1le3">
+        <description>Drink in Chile: https://en.wikipedia.org/wiki/Cola_de_mono</description>
+        <inputEntry id="UnaryTests_0xynzkt">
+          <text>"Lots"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_00404y6">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_120ovvl">
+          <text>"The Americas"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_19pobq5">
+          <text>"Cola de mono"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1vrf9x9">
+          <text>"Hans"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1eyx25k">
+        <description>https://en.wikipedia.org/wiki/Tea</description>
+        <inputEntry id="UnaryTests_1263iwr">
+          <text>"None"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1ss18fn">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1tyg9xr">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0qhrot0">
+          <text>"Any kind of tea"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0hd2txn">
+          <text>"Luca"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0wqs39p">
+        <description>Drink in Mexico: https://www.mexicoinmykitchen.com/christmas-punch-recipe/</description>
+        <inputEntry id="UnaryTests_0eu791y">
+          <text>"Lots"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0n5i5yp">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1j80gn7">
+          <text>"The Americas"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0304ybf">
+          <text>"Ponche navideño"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1pfl8o1">
+          <text>"Maria"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1a7jnt8">
+        <description>https://recipesforholidays.com/champagne-moscow-mules/</description>
+        <inputEntry id="UnaryTests_0xudzw9">
+          <text>"Lots"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1dvboss">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0vkbp18">
+          <text>"Europe"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_04lk47s">
+          <text>"Moscow Mule with Sekt"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_09ug2e2">
+          <text>"Elli"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1g9k2xt">
+        <description>In Spain with Churros: https://spanishsabores.com/authentic-spanish-hot-chocolate-recipe/</description>
+        <inputEntry id="UnaryTests_1vpv1l7">
+          <text>"None"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1fo0ojr">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0zeadgp">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0u0ej9r">
+          <text>"Chocolate caliente"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0yp7tkh">
+          <text>"Sean"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1hdqs9l">
+        <description>https://en.wikipedia.org/wiki/Pumpkin_Spice_Latte</description>
+        <inputEntry id="UnaryTests_1eo4hh5">
+          <text>"None"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0f78al1">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1n57vn2">
+          <text>"The Americas"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_10asm0m">
+          <text>"Pumpkin Spice Latte" </text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0lcksdo">
+          <text>"Dorothy"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_01thif2">
+        <description>https://en.wikipedia.org/wiki/Feuerzangenbowle</description>
+        <inputEntry id="UnaryTests_0l9kg5u">
+          <text>"Lots"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1whve5w">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_101hxbq">
+          <text>"Europe"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0gzz6oo">
+          <text>"Feuerzangenbowle"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0b2zybt">
+          <text>"Thomas"</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="Decision_choose_drink">
+        <dc:Bounds height="80" width="180" x="160" y="80" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>
