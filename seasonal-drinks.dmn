@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="Definitions_holiday_drinks" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="5.4.1" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.1.0" camunda:diagramRelationId="82f3d0f3-c0d6-4707-a8ef-19f35014a023">
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="Definitions_holiday_drinks" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="5.5.1" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.1.0" camunda:diagramRelationId="82f3d0f3-c0d6-4707-a8ef-19f35014a023">
   <decision id="Decision_choose_drink" name="Choose a drink">
     <decisionTable id="DecisionTable_0lt6juq" hitPolicy="COLLECT">
       <input id="Input_1" label="Alcoholic">
@@ -221,6 +221,24 @@
         </outputEntry>
         <outputEntry id="LiteralExpression_0qpr09j">
           <text>"Tiese"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_049py12">
+        <description>https://www.foodnetwork.com/recipes/nancy-fuller/spiced-cider-2251070</description>
+        <inputEntry id="UnaryTests_0wehx8c">
+          <text>"None","Some","Lots"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1gydzos">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0vafsix">
+          <text>"The Americas"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1oyf5l0">
+          <text>"Spiced Apple Cider"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0bb0i7x">
+          <text>"Dave"</text>
         </outputEntry>
       </rule>
     </decisionTable>
