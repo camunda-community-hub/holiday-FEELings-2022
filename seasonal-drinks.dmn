@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="Definitions_holiday_drinks" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="5.4.1" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.1.0" camunda:diagramRelationId="82f3d0f3-c0d6-4707-a8ef-19f35014a023">
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="Definitions_holiday_drinks" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="5.4.1" camunda:diagramRelationId="82f3d0f3-c0d6-4707-a8ef-19f35014a023" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.1.0">
   <decision id="Decision_choose_drink" name="Choose a drink">
     <decisionTable id="DecisionTable_0lt6juq" hitPolicy="COLLECT">
       <input id="Input_1" label="Alcoholic">
@@ -221,6 +221,24 @@
         </outputEntry>
         <outputEntry id="LiteralExpression_0qpr09j">
           <text>"Tiese"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_07na81a">
+        <description>https://gist.github.com/pepopowitz/9a72f0a9281505fe85635fb47d46d316</description>
+        <inputEntry id="UnaryTests_0tjx6bm">
+          <text>"Some"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_090v0ik">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0cv0jtn">
+          <text>"The Americas"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0lxygne">
+          <text>"Wisconsin Old Fashioned"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1wdctpb">
+          <text>"Steven"</text>
         </outputEntry>
       </rule>
     </decisionTable>
