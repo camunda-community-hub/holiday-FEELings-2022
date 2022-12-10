@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="Definitions_holiday_drinks" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="5.4.1" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.1.0" camunda:diagramRelationId="82f3d0f3-c0d6-4707-a8ef-19f35014a023">
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="Definitions_holiday_drinks" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="5.5.0" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.1.0" camunda:diagramRelationId="82f3d0f3-c0d6-4707-a8ef-19f35014a023">
   <decision id="Decision_choose_drink" name="Choose a drink">
     <decisionTable id="DecisionTable_0lt6juq" hitPolicy="COLLECT">
       <input id="Input_1" label="Alcoholic">
@@ -221,6 +221,24 @@
         </outputEntry>
         <outputEntry id="LiteralExpression_0qpr09j">
           <text>"Tiese"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_096f2mn">
+        <description>https://www.feastingathome.com/authentic-masala-chai-recipe/</description>
+        <inputEntry id="UnaryTests_1v86zrv">
+          <text>"None"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0fq6w2g">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1e0w0jp">
+          <text>"Asia"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0ol8uy6">
+          <text>"Masala Chai"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_14tm6zy">
+          <text>"Jothi"</text>
         </outputEntry>
       </rule>
     </decisionTable>
