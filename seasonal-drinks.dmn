@@ -223,6 +223,60 @@
           <text>"Tiese"</text>
         </outputEntry>
       </rule>
+      <rule id="DecisionRule_1rfg38t">
+        <description>https://tastesbetterfromscratch.com/homemade-eggnog/</description>
+        <inputEntry id="UnaryTests_1unukit">
+          <text>"Some"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1rm3ol9">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_11a9df5">
+          <text>-</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0kn4ijh">
+          <text>"Eggnog"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1gvb8z4">
+          <text>"Stefan"</text>
+          </outputEntry>
+      </rule>
+      <rule id="DecisionRule_049py12">
+        <description>https://www.foodnetwork.com/recipes/nancy-fuller/spiced-cider-2251070</description>
+        <inputEntry id="UnaryTests_0wehx8c">
+          <text>"None","Some","Lots"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1gydzos">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0vafsix">
+          <text>"The Americas"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1oyf5l0">
+          <text>"Spiced Apple Cider"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0bb0i7x">
+          <text>"Dave"</text>
+           </outputEntry>
+      </rule>
+     <rule id="DecisionRule_096f2mn">
+        <description>https://www.feastingathome.com/authentic-masala-chai-recipe/</description>
+        <inputEntry id="UnaryTests_1v86zrv">
+          <text>"None"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0fq6w2g">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1e0w0jp">
+          <text>"Asia"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0ol8uy6">
+          <text>"Masala Chai"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_14tm6zy">
+          <text>"Jothi"</text>
+        </outputEntry>
+      </rule>
       <rule id="DecisionRule_1ofnimx">
         <description>https://en.wikipedia.org/wiki/Wassail</description>
         <inputEntry id="UnaryTests_00bxhf6">
