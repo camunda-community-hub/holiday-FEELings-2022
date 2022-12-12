@@ -277,6 +277,24 @@
           <text>"Jothi"</text>
         </outputEntry>
       </rule>
+      <rule id="DecisionRule_1ofnimx">
+        <description>https://en.wikipedia.org/wiki/Wassail</description>
+        <inputEntry id="UnaryTests_00bxhf6">
+          <text>"Some"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0d6xfpb">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0rajzho">
+          <text>"Europe"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1mn350s">
+          <text>"Wassail"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0iuilxt">
+          <text>"Amy"</text>
+          </outputEntry>
+      </rule>
       <rule id="DecisionRule_07na81a">
         <description>https://gist.github.com/pepopowitz/9a72f0a9281505fe85635fb47d46d316</description>
         <inputEntry id="UnaryTests_0tjx6bm">
