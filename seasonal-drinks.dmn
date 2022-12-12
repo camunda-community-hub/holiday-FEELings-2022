@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="Definitions_holiday_drinks" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="5.4.1" camunda:diagramRelationId="82f3d0f3-c0d6-4707-a8ef-19f35014a023" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.1.0">
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="Definitions_holiday_drinks" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="5.5.1" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.1.0" camunda:diagramRelationId="82f3d0f3-c0d6-4707-a8ef-19f35014a023">
   <decision id="Decision_choose_drink" name="Choose a drink">
     <decisionTable id="DecisionTable_0lt6juq" hitPolicy="COLLECT">
       <input id="Input_1" label="Alcoholic">
@@ -25,8 +25,9 @@
       </input>
       <output id="Output_1" label="Drink" name="drinkname" typeRef="string" />
       <output id="OutputClause_1kox9r3" label="Recommended by" name="recommender" typeRef="string" />
+      <output id="OutputClause_030y896" label="URL" name="url" typeRef="string" />
       <rule id="DecisionRule_12fjgmb">
-        <description>https://en.wikipedia.org/wiki/Mulled_wine</description>
+        <description></description>
         <inputEntry id="UnaryTests_12jkg7g">
           <text>"Some"</text>
         </inputEntry>
@@ -42,9 +43,12 @@
         <outputEntry id="LiteralExpression_0hl1at8">
           <text>"Niall"</text>
         </outputEntry>
+        <outputEntry id="LiteralExpression_119zi68">
+          <text>"https://en.wikipedia.org/wiki/Mulled_wine"</text>
+        </outputEntry>
       </rule>
       <rule id="DecisionRule_1ef5nqr">
-        <description>https://en.wikipedia.org/wiki/Lumumba_(drink)</description>
+        <description></description>
         <inputEntry id="UnaryTests_1xtqwj4">
           <text>"Some"</text>
         </inputEntry>
@@ -60,9 +64,12 @@
         <outputEntry id="LiteralExpression_0uiemp9">
           <text>"Nele"</text>
         </outputEntry>
+        <outputEntry id="LiteralExpression_15stnk2">
+          <text>"https://en.wikipedia.org/wiki/Lumumba_(drink)"</text>
+        </outputEntry>
       </rule>
       <rule id="DecisionRule_0bj1le3">
-        <description>Drink in Chile: https://en.wikipedia.org/wiki/Cola_de_mono</description>
+        <description>Chile</description>
         <inputEntry id="UnaryTests_0xynzkt">
           <text>"Lots"</text>
         </inputEntry>
@@ -78,9 +85,12 @@
         <outputEntry id="LiteralExpression_1vrf9x9">
           <text>"Hans"</text>
         </outputEntry>
+        <outputEntry id="LiteralExpression_14zx8xe">
+          <text>" https://en.wikipedia.org/wiki/Cola_de_mono"</text>
+        </outputEntry>
       </rule>
       <rule id="DecisionRule_1eyx25k">
-        <description>https://en.wikipedia.org/wiki/Tea</description>
+        <description></description>
         <inputEntry id="UnaryTests_1263iwr">
           <text>"None"</text>
         </inputEntry>
@@ -96,9 +106,12 @@
         <outputEntry id="LiteralExpression_0hd2txn">
           <text>"Luca"</text>
         </outputEntry>
+        <outputEntry id="LiteralExpression_08kvk4f">
+          <text>"https://en.wikipedia.org/wiki/Tea"</text>
+        </outputEntry>
       </rule>
       <rule id="DecisionRule_0wqs39p">
-        <description>Drink in Mexico: https://www.mexicoinmykitchen.com/christmas-punch-recipe/</description>
+        <description>Mexico </description>
         <inputEntry id="UnaryTests_0eu791y">
           <text>"Lots"</text>
         </inputEntry>
@@ -114,9 +127,12 @@
         <outputEntry id="LiteralExpression_1pfl8o1">
           <text>"Maria"</text>
         </outputEntry>
+        <outputEntry id="LiteralExpression_15caqxr">
+          <text>"https://www.mexicoinmykitchen.com/christmas-punch-recipe/"</text>
+        </outputEntry>
       </rule>
       <rule id="DecisionRule_1a7jnt8">
-        <description>https://recipesforholidays.com/champagne-moscow-mules/</description>
+        <description></description>
         <inputEntry id="UnaryTests_0xudzw9">
           <text>"Lots"</text>
         </inputEntry>
@@ -132,9 +148,12 @@
         <outputEntry id="LiteralExpression_09ug2e2">
           <text>"Elli"</text>
         </outputEntry>
+        <outputEntry id="LiteralExpression_0djv7x0">
+          <text>"https://recipesforholidays.com/champagne-moscow-mules/"</text>
+        </outputEntry>
       </rule>
       <rule id="DecisionRule_1g9k2xt">
-        <description>In Spain with Churros: https://spanishsabores.com/authentic-spanish-hot-chocolate-recipe/</description>
+        <description>In Spain with Churros</description>
         <inputEntry id="UnaryTests_1vpv1l7">
           <text>"None"</text>
         </inputEntry>
@@ -150,9 +169,12 @@
         <outputEntry id="LiteralExpression_0yp7tkh">
           <text>"Sean"</text>
         </outputEntry>
+        <outputEntry id="LiteralExpression_1u0xxrb">
+          <text>"https://spanishsabores.com/authentic-spanish-hot-chocolate-recipe/"</text>
+        </outputEntry>
       </rule>
       <rule id="DecisionRule_1hdqs9l">
-        <description>https://en.wikipedia.org/wiki/Pumpkin_Spice_Latte</description>
+        <description></description>
         <inputEntry id="UnaryTests_1eo4hh5">
           <text>"None"</text>
         </inputEntry>
@@ -168,9 +190,12 @@
         <outputEntry id="LiteralExpression_0lcksdo">
           <text>"Dorothy"</text>
         </outputEntry>
+        <outputEntry id="LiteralExpression_033tmcl">
+          <text>"https://en.wikipedia.org/wiki/Pumpkin_Spice_Latte"</text>
+        </outputEntry>
       </rule>
       <rule id="DecisionRule_01thif2">
-        <description>https://en.wikipedia.org/wiki/Feuerzangenbowle</description>
+        <description>DACH region</description>
         <inputEntry id="UnaryTests_0l9kg5u">
           <text>"Lots"</text>
         </inputEntry>
@@ -186,9 +211,12 @@
         <outputEntry id="LiteralExpression_0b2zybt">
           <text>"Thomas"</text>
         </outputEntry>
+        <outputEntry id="LiteralExpression_131ab5j">
+          <text>"https://en.wikipedia.org/wiki/Feuerzangenbowle"</text>
+        </outputEntry>
       </rule>
       <rule id="DecisionRule_0z619ju">
-        <description>https://en.wikipedia.org/wiki/Gl%C3%B6gg</description>
+        <description>Sweden</description>
         <inputEntry id="UnaryTests_1e65dbb">
           <text>"Some"</text>
         </inputEntry>
@@ -204,9 +232,12 @@
         <outputEntry id="LiteralExpression_0wo448o">
           <text>"Emil"</text>
         </outputEntry>
+        <outputEntry id="LiteralExpression_1h3lrle">
+          <text>"https://en.wikipedia.org/wiki/Gl%C3%B6gg"</text>
+        </outputEntry>
       </rule>
       <rule id="DecisionRule_0db1g55">
-        <description>https://oldjamaicagingerbeer.com/</description>
+        <description></description>
         <inputEntry id="UnaryTests_0847k7t">
           <text>"None"</text>
         </inputEntry>
@@ -222,9 +253,12 @@
         <outputEntry id="LiteralExpression_0qpr09j">
           <text>"Tiese"</text>
         </outputEntry>
+        <outputEntry id="LiteralExpression_1kev50j">
+          <text>"https://oldjamaicagingerbeer.com/"</text>
+        </outputEntry>
       </rule>
       <rule id="DecisionRule_1rfg38t">
-        <description>https://tastesbetterfromscratch.com/homemade-eggnog/</description>
+        <description></description>
         <inputEntry id="UnaryTests_1unukit">
           <text>"Some"</text>
         </inputEntry>
@@ -239,10 +273,13 @@
         </outputEntry>
         <outputEntry id="LiteralExpression_1gvb8z4">
           <text>"Stefan"</text>
-          </outputEntry>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1gizv8e">
+          <text>"https://tastesbetterfromscratch.com/homemade-eggnog/"</text>
+        </outputEntry>
       </rule>
       <rule id="DecisionRule_049py12">
-        <description>https://www.foodnetwork.com/recipes/nancy-fuller/spiced-cider-2251070</description>
+        <description></description>
         <inputEntry id="UnaryTests_0wehx8c">
           <text>"None","Some","Lots"</text>
         </inputEntry>
@@ -257,10 +294,13 @@
         </outputEntry>
         <outputEntry id="LiteralExpression_0bb0i7x">
           <text>"Dave"</text>
-           </outputEntry>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1kqrv8k">
+          <text>"https://www.foodnetwork.com/recipes/nancy-fuller/spiced-cider-2251070"</text>
+        </outputEntry>
       </rule>
-     <rule id="DecisionRule_096f2mn">
-        <description>https://www.feastingathome.com/authentic-masala-chai-recipe/</description>
+      <rule id="DecisionRule_096f2mn">
+        <description></description>
         <inputEntry id="UnaryTests_1v86zrv">
           <text>"None"</text>
         </inputEntry>
@@ -276,9 +316,12 @@
         <outputEntry id="LiteralExpression_14tm6zy">
           <text>"Jothi"</text>
         </outputEntry>
+        <outputEntry id="LiteralExpression_0s26aqx">
+          <text>"https://www.feastingathome.com/authentic-masala-chai-recipe/"</text>
+        </outputEntry>
       </rule>
       <rule id="DecisionRule_1ofnimx">
-        <description>https://en.wikipedia.org/wiki/Wassail</description>
+        <description></description>
         <inputEntry id="UnaryTests_00bxhf6">
           <text>"Some"</text>
         </inputEntry>
@@ -293,10 +336,13 @@
         </outputEntry>
         <outputEntry id="LiteralExpression_0iuilxt">
           <text>"Amy"</text>
-          </outputEntry>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1c8jt3a">
+          <text>"https://en.wikipedia.org/wiki/Wassail"</text>
+        </outputEntry>
       </rule>
       <rule id="DecisionRule_07na81a">
-        <description>https://gist.github.com/pepopowitz/9a72f0a9281505fe85635fb47d46d316</description>
+        <description></description>
         <inputEntry id="UnaryTests_0tjx6bm">
           <text>"Some"</text>
         </inputEntry>
@@ -311,6 +357,195 @@
         </outputEntry>
         <outputEntry id="LiteralExpression_1wdctpb">
           <text>"Steven"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_13t5qr2">
+          <text>"https://gist.github.com/pepopowitz/9a72f0a9281505fe85635fb47d46d316"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0oi1078">
+        <description>UK</description>
+        <inputEntry id="UnaryTests_13fr8ca">
+          <text>"Some","Lots"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0f49m2n">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1vym5xm">
+          <text>"Europe"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0yoqqkl">
+          <text>"Snowball"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_10bnh5j">
+          <text>"Eve"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_11gin9s">
+          <text>"https://www.bbcgoodfood.com/recipes/classic-snowball"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1feelz7">
+        <description>UK</description>
+        <inputEntry id="UnaryTests_087actk">
+          <text>"Some"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0hyslof">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1d4kpv4">
+          <text>"Europe"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_13sd8po">
+          <text>"Babycham"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1ms19bi">
+          <text>"Eve"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1v05e3o">
+          <text>"https://www.babycham.co.uk/"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0d7ate7">
+        <description>Germany (DACH region)</description>
+        <inputEntry id="UnaryTests_1gjprft">
+          <text>"None"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_07pxtld">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1ogo0gj">
+          <text>"Europe"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1lh7avi">
+          <text>"Kinderpunsch"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0c232wq">
+          <text>"Nico"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1h99958">
+          <text>"https://www.daringgourmet.com/kinderpunsch-german-non-alcoholic-spiced-punch/"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_04yu9sh">
+        <inputEntry id="UnaryTests_0anje5z">
+          <text>"None"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_18lu3q5">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0l2urkt">
+          <text>"Australasia","Europe","The Americas","Africa","Asia"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1vdoxrl">
+          <text>"Ginger Tea"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0xbvf8j">
+          <text>"Majiec"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0swe7ro">
+          <text>"https://cookieandkate.com/fresh-ginger-tea-recipe/"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0x15gxc">
+        <description>France</description>
+        <inputEntry id="UnaryTests_1fgja0y">
+          <text>"Lots"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_160y5fw">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1w5z0us">
+          <text>"Europe"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_01kzg85">
+          <text>"Soupe de champagne "</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1a5ntch">
+          <text>"Aubérie"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0ywlwjm">
+          <text>"https://www.shakeitdrinkit.com/soupe-de-champagne-cocktail-661.html"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_13wwnjl">
+        <inputEntry id="UnaryTests_1bcs38g">
+          <text>"Some"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0lch69x">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_18en7wu">
+          <text>"Australasia","Europe","The Americas","Africa","Asia"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0dqqrf0">
+          <text>"Beer"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1f54n4e">
+          <text>"Daniel"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1psjgxn">
+          <text>"https://en.wikipedia.org/wiki/Beer"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1qo98mn">
+        <description>Mexiko</description>
+        <inputEntry id="UnaryTests_0r35aah">
+          <text>"None"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1y1bzg0">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0sms6pv">
+          <text>"The Americas"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_04q6ydc">
+          <text>"cafe de olla"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0jcpcfb">
+          <text>"Uriel"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0s8tas9">
+          <text>"https://www.mexicoinmykitchen.com/cafe-de-olla-recipe/#recipe"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_101q1nf">
+        <description>Mauritius</description>
+        <inputEntry id="UnaryTests_1wxcqrz">
+          <text>"Some"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0xy31qs">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0jib7fu">
+          <text>"Asia"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_03ekvzc">
+          <text>"Yuvraj"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0s2whl7">
+          <text>"Phoenix beer"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1umar0d">
+          <text>"https://en.wikipedia.org/wiki/Phoenix_Beverages"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1ftcwpf">
+        <inputEntry id="UnaryTests_1ufuxxw">
+          <text>"Some"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_164m8fr">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1u8h1w6">
+          <text>"Europe"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1w8wace">
+          <text>"Andy"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_18navvm">
+          <text>"Glühmost"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0vxjpak">
+          <text>"https://www.thekitchenmaus.com/mulled-hard-cider-gluhmost/"</text>
         </outputEntry>
       </rule>
     </decisionTable>
