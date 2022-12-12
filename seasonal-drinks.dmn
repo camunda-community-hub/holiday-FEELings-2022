@@ -293,6 +293,24 @@
         </outputEntry>
         <outputEntry id="LiteralExpression_0iuilxt">
           <text>"Amy"</text>
+          </outputEntry>
+      </rule>
+      <rule id="DecisionRule_07na81a">
+        <description>https://gist.github.com/pepopowitz/9a72f0a9281505fe85635fb47d46d316</description>
+        <inputEntry id="UnaryTests_0tjx6bm">
+          <text>"Some"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_090v0ik">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0cv0jtn">
+          <text>"The Americas"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0lxygne">
+          <text>"Wisconsin Old Fashioned"</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1wdctpb">
+          <text>"Steven"</text>
         </outputEntry>
       </rule>
     </decisionTable>
