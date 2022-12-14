@@ -1,0 +1,87 @@
+{
+  "components": [
+    {
+      "text": "# Lets find what drink you'd like\n",
+      "type": "text",
+      "id": "Field_1rp63cr"
+    },
+    {
+      "label": "Your Name",
+      "type": "textfield",
+      "id": "Field_0aqa0k1",
+      "key": "name"
+    },
+    {
+      "label": "Warm?",
+      "type": "checkbox",
+      "id": "Field_19o3mau",
+      "key": "warm",
+      "description": "Would you like a warm drink?"
+    },
+    {
+      "values": [
+        {
+          "label": "None",
+          "value": "None"
+        },
+        {
+          "label": "Some",
+          "value": "Some"
+        },
+        {
+          "label": "Lots",
+          "value": "Lots"
+        }
+      ],
+      "label": "How much alcohol",
+      "type": "select",
+      "id": "Field_0mz0wq1",
+      "key": "alcohol"
+    },
+    {
+      "values": [
+        {
+          "label": "Australasia",
+          "value": "Australasia"
+        },
+        {
+          "label": "Europe",
+          "value": "Europe"
+        },
+        {
+          "label": "The Americas",
+          "value": "The Americas"
+        },
+        {
+          "label": "Africa",
+          "value": "Africa"
+        },
+        {
+          "label": "Asia",
+          "value": "Asia"
+        }
+      ],
+      "label": "Region",
+      "type": "select",
+      "id": "Field_13clqxk",
+      "key": "region",
+      "description": "What part of the world would you like the drink to be from>"
+    },
+    {
+      "label": "Email Address",
+      "type": "textfield",
+      "id": "Field_0xn3j7p",
+      "key": "emailAddress",
+      "description": "What is your email address"
+    }
+  ],
+  "schemaVersion": 5,
+  "exporter": {
+    "name": "Camunda Web Modeler",
+    "version": "36b94aa"
+  },
+  "type": "default",
+  "id": "Form_42b19276-fc36-4f01-8aea-24e15ca69ca1",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.1.0"
+}

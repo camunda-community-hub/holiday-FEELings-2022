@@ -1,0 +1,25 @@
+{
+  "components": [
+    {
+      "text": "# Select the Drinks you'd like",
+      "type": "text",
+      "id": "Field_0s38u80"
+    },
+    {
+      "label": "Select the drink",
+      "type": "radio",
+      "id": "Field_175h3pg",
+      "key": "drinkChoice",
+      "valuesKey": "drinkList"
+    }
+  ],
+  "schemaVersion": 5,
+  "exporter": {
+    "name": "Camunda Web Modeler",
+    "version": "6f76121"
+  },
+  "type": "default",
+  "id": "Form_0b922893-cae2-4569-b0f9-ab4efb6b007a",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.1.0"
+}
